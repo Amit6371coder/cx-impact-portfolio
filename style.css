@@ -1,81 +1,121 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Segoe UI', sans-serif;
     background: #0f172a;
     color: #e2e8f0;
 }
 
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(to right, #1e293b, #0f172a);
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: #111827;
+    position: sticky;
+    top: 0;
 }
 
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #38bdf8;
-    margin-bottom: 20px;
-}
-
-.hero h1 {
+.logo {
+    font-weight: bold;
+    font-size: 20px;
     color: #38bdf8;
-    font-size: 40px;
-    margin-bottom: 5px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #e2e8f0;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    padding: 100px 10%;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 
 .buttons a {
-    margin: 10px;
+    display: inline-block;
+    margin-right: 15px;
     padding: 10px 20px;
     background: #38bdf8;
     color: #0f172a;
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
-    display: inline-block;
-    transition: 0.3s;
 }
 
 .buttons a:hover {
     background: #0ea5e9;
 }
 
-section {
-    padding: 60px 10%;
+.hero-image img {
+    width: 250px;
+    border-radius: 15px;
+    border: 3px solid #38bdf8;
 }
 
-h2 {
+.section {
+    padding: 80px 10%;
+}
+
+.section h2 {
     color: #38bdf8;
     margin-bottom: 20px;
+}
+
+.project-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .project-card {
     background: #1e293b;
     padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    transition: transform 0.3s;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 250px;
+    transition: 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
 }
 
-.project-card ul {
-    padding-left: 20px;
-}
-
-.skill-grid {
+.skills {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
 
-.skill-grid span {
+.skills span {
     background: #1e293b;
-    padding: 8px 15px;
+    padding: 8px 14px;
     border-radius: 20px;
     font-size: 14px;
 }
@@ -84,6 +124,7 @@ h2 {
     display: flex;
     flex-direction: column;
     max-width: 400px;
+    margin-top: 20px;
 }
 
 .contact input,
@@ -110,11 +151,16 @@ h2 {
 footer {
     text-align: center;
     padding: 20px;
-    background: #1e293b;
+    background: #111827;
 }
 
 @media(max-width: 768px) {
-    .hero h1 {
-        font-size: 28px;
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
     }
-}
+
+    .hero-image img {
+        margin-top: 20px;
+    }
+        }
