@@ -1,109 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amit Pradhan | Blockchain Developer</title>
-<link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8">
+  <title>Amit Pradhan | Blockchain Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 100px 10%;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #4f46e5;
+    }
+
+    p {
+      color: #475569;
+      font-size: 16px;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 120px 10%;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      background: #f8fafc;
+      position: relative;
+    }
+
+    .profile-circle {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(79,70,229,0.1) 0%, rgba(79,70,229,0.03) 70%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      font-weight: 600;
+      color: #4f46e5;
+    }
+
+    .hero-text h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text span {
+      color: #4f46e5;
+      font-weight: 600;
+    }
+
+    /* Cards */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #0f172a;
+    }
+
+    /* Contact */
+    .contact a {
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact a:hover {
+      color: #4338ca;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
 <body>
 
-<header class="hero">
-    <div class="hero-content">
-        <img src="profile.jpg" class="profile-img" alt="Amit Pradhan">
-        <div>
-            <h1>Amit Pradhan</h1>
-            <p class="tagline">Blockchain Developer | B.Tech Student</p>
-        </div>
+  <!-- HERO -->
+  <section class="hero" style="border-top: none;">
+    <div class="profile-circle">
+      AP
     </div>
-</header>
+    <div class="hero-text">
+      <h1>Amit Pradhan</h1>
+      <p><span>Blockchain Developer</span> | B.Tech Student</p>
+    </div>
+  </section>
 
-<section class="about">
+  <!-- ABOUT -->
+  <section>
     <h2>About Me</h2>
     <p>
-        My name is <strong>Amit Pradhan</strong>. I am currently pursuing B.Tech at
-        Centurion University of Technology and Management, Bhubaneswar Campus.
-        I am passionate about blockchain technology, decentralized systems,
-        and Web3 development. I focus on building secure smart contracts,
-        decentralized applications, and integrating blockchain tools
-        to create transparent and scalable digital solutions.
+      I build secure smart contracts and scalable Web3 applications focused on transparency and decentralization.
+      Currently pursuing B.Tech with specialization in Blockchain Technology and Web3 development.
     </p>
-</section>
+  </section>
 
-<section class="skills">
+  <!-- SKILLS -->
+  <section>
     <h2>Skills</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Smart Contract Development</h3>
+        <p>Designing and deploying secure Solidity smart contracts on Ethereum.</p>
+      </div>
 
-    <div class="skills-container">
+      <div class="card">
+        <h3>DApp Development</h3>
+        <p>Building decentralized applications using Web3.js, Ethers.js, and React.</p>
+      </div>
 
-        <div class="skill-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="">
-            <h3>Smart Contract Development</h3>
-            <p>Designing and deploying Solidity smart contracts on Ethereum networks.</p>
-        </div>
-
-        <div class="skill-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="">
-            <h3>DApp Development</h3>
-            <p>Building decentralized applications connected to blockchain systems.</p>
-        </div>
-
-        <div class="skill-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968853.png" alt="">
-            <h3>MetaMask Integration</h3>
-            <p>Implementing wallet authentication and secure transaction signing.</p>
-        </div>
-
+      <div class="card">
+        <h3>MetaMask Integration</h3>
+        <p>Implementing wallet authentication and blockchain transactions.</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="education">
+  <!-- EDUCATION -->
+  <section>
     <h2>Education</h2>
 
-    <div class="edu-card">
-        <h3>Bachelor of Technology (B.Tech)</h3>
-        <p>
-            <strong>Centurion University of Technology and Management</strong><br>
-            Bhubaneswar Campus<br>
-            Currently pursuing B.Tech with focus on Blockchain Technology and Web3 development.
-        </p>
+    <div class="card" style="margin-bottom: 30px;">
+      <h3>Bachelor of Technology (B.Tech)</h3>
+      <p>Centurion University of Technology and Management</p>
+      <p>Focus on Blockchain Technology and Web3 Development.</p>
     </div>
 
-    <div class="edu-card">
-        <h3>Senior Secondary Education (CBSE)</h3>
-        <p>
-            <strong>St. Xaviers High School Senior Secondary School (CBSE)</strong><br>
-            Completed higher secondary education with strong academic foundation.
-        </p>
+    <div class="card">
+      <h3>Senior Secondary Education (CBSE)</h3>
+      <p>St. Xaviers High School</p>
+      <p>Completed higher secondary education with strong academic foundation.</p>
     </div>
 
-    <div class="edu-card">
-        <h3>Secondary Education (CBSE)</h3>
-        <p>
-            <strong>St. Xaviers High School Senior Secondary School (CBSE)</strong><br>
-            Completed schooling with academic excellence and technical interests.
-        </p>
-    </div>
-</section>
+  </section>
 
-<section class="contact">
+  <!-- CONTACT -->
+  <section class="contact">
     <h2>Contact Me</h2>
-
-    <p><strong>Email:</strong> amitpradhan9246@gmail.com</p>
-    <p><strong>Phone:</strong> +91 9348672393</p>
-
-    <form action="https://formsubmit.co/amitpradhan9246@gmail.com" method="POST">
-        <input type="hidden" name="_next" value="https://amit6371coder.github.io/cx-impact-portfolio/">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
-
-<footer>
-    © 2026 Amit Pradhan | Blockchain Developer
-</footer>
+    <p>Email: <a href="mailto:amitpradhan9246@gmail.com">amitpradhan9246@gmail.com</a></p>
+  </section>
 
 </body>
 </html>
