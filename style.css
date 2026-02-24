@@ -49,15 +49,16 @@ h2 {
     color: #2563eb;
 }
 
-.skills ul {
-    list-style: none;
+.skill-box {
+    background: #e0e7ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-.skills li {
-    background: #e0e7ff;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 6px;
+.skill-box h3 {
+    margin-bottom: 8px;
+    color: #1e3a8a;
 }
 
 .contact-form form {
