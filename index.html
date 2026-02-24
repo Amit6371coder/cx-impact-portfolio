@@ -10,12 +10,13 @@
 <body>
 
 <header class="hero">
+    <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
     <h1>Your Name</h1>
     <p>B.Tech Student | Blockchain Developer</p>
     <div class="buttons">
         <a href="#">GitHub</a>
         <a href="#">LinkedIn</a>
-        <a href="#">Download Resume</a>
+        <a href="resume.pdf" download>Download Resume</a>
     </div>
 </header>
 
@@ -23,64 +24,31 @@
     <h2>About Me</h2>
     <p>
         I am a B.Tech student specializing in Blockchain Technology.
-        I build smart contracts, decentralized applications (DApps),
-        and explore Web3 ecosystems including Ethereum and Polygon.
+        I build smart contracts, decentralized applications, and explore Web3 ecosystems.
     </p>
 </section>
 
-<section class="projects">
-    <h2>Blockchain Projects</h2>
-
-    <div class="project-card">
-        <h3>Decentralized Crowdfunding DApp</h3>
-        <ul>
-            <li>Built using Solidity and Hardhat</li>
-            <li>Integrated MetaMask wallet connection</li>
-            <li>Deployed smart contract on testnet</li>
-        </ul>
-    </div>
-
-    <div class="project-card">
-        <h3>NFT Minting Platform</h3>
-        <ul>
-            <li>Developed ERC-721 smart contract</li>
-            <li>Implemented IPFS storage</li>
-            <li>Created React frontend interface</li>
-        </ul>
-    </div>
-
-    <div class="project-card">
-        <h3>Token Voting System</h3>
-        <ul>
-            <li>ERC-20 token-based governance</li>
-            <li>On-chain voting logic</li>
-            <li>Secure transaction validation</li>
-        </ul>
-    </div>
-
+<section class="contact-info">
+    <h2>Contact Information</h2>
+    <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+    <p><strong>Email:</strong> your@email.com</p>
 </section>
 
-<section class="skills">
-    <h2>Technical Skills</h2>
-    <div class="skill-grid">
-        <span>Solidity</span>
-        <span>Hardhat</span>
-        <span>Ethereum</span>
-        <span>Polygon</span>
-        <span>React</span>
-        <span>Node.js</span>
-        <span>IPFS</span>
-        <span>Web3.js</span>
-        <span>Git & GitHub</span>
-    </div>
-</section>
+<section class="contact-form">
+    <h2>Send Me a Message</h2>
 
-<section class="education">
-    <h2>Education</h2>
-    <div class="edu-card">
-        <h3>B.Tech (Your College Name)</h3>
-        <p>Specialization in Blockchain / Computer Science</p>
-    </div>
+    <!-- Replace your@email.com with your real email -->
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
 </section>
 
 <footer>
