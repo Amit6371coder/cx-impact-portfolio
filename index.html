@@ -1,237 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amit Pradhan | Blockchain Developer</title>
+  <meta charset="UTF-8">
+  <title>Amit Pradhan | Blockchain Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  font-family:'Inter',sans-serif;
-  background:#f8fafc;
-  color:#0f172a;
-  scroll-behavior:smooth;
-}
-
-nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:25px 10%;
-  background:white;
-  border-bottom:1px solid #e2e8f0;
-  position:sticky;
-  top:0;
-}
-
-nav h2{
-  color:#4f46e5;
-}
-
-nav ul{
-  list-style:none;
-  display:flex;
-  gap:30px;
-}
-
-nav ul li a{
-  text-decoration:none;
-  color:#475569;
-  font-weight:500;
-}
-
-nav ul li a:hover{
-  color:#4f46e5;
-}
-
-/* HERO */
-.hero{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:100px 10%;
-}
-
-.hero-text{
-  max-width:550px;
-}
-
-.hero-text h1{
-  font-size:48px;
-  margin-bottom:15px;
-}
-
-.hero-text span{
-  color:#4f46e5;
-  font-weight:600;
-}
-
-.hero-text p{
-  margin-bottom:30px;
-  color:#475569;
-}
-
-.hero-btn{
-  padding:14px 28px;
-  background:#4f46e5;
-  color:white;
-  border:none;
-  border-radius:12px;
-  cursor:pointer;
-  font-weight:600;
-  transition:0.3s;
-}
-
-.hero-btn:hover{
-  background:#4338ca;
-}
-
-.hero-img{
-  width:300px;
-  height:300px;
-  border-radius:30px;
-  background:linear-gradient(135deg,#e0e7ff,#c7d2fe);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:80px;
-  color:#4f46e5;
-  font-weight:700;
-}
-
-/* SECTION */
-section{
-  padding:100px 10%;
-  border-top:1px solid #e2e8f0;
-}
-
-section h2{
-  font-size:32px;
-  margin-bottom:40px;
-  color:#4f46e5;
-}
-
-/* CARDS */
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:30px;
-}
-
-.card{
-  background:white;
-  padding:30px;
-  border-radius:16px;
-  border:1px solid #e2e8f0;
-  box-shadow:0 10px 30px rgba(15,23,42,0.05);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 15px 40px rgba(15,23,42,0.08);
-}
-
-.card h3{
-  margin-bottom:10px;
-}
-
-/* CONTACT */
-.contact-wrapper{
-  display:flex;
-  gap:60px;
-}
-
-.contact-info{
-  flex:1;
-}
-
-.contact-info p{
-  margin-bottom:20px;
-  color:#475569;
-}
-
-.contact-info a{
-  color:#4f46e5;
-  text-decoration:none;
-}
-
-.divider{
-  width:1px;
-  background:#e2e8f0;
-}
-
-.contact-form{
-  flex:1;
-}
-
-.contact-form form{
-  display:flex;
-  flex-direction:column;
-  gap:20px;
-}
-
-.contact-form input,
-.contact-form textarea{
-  padding:14px;
-  border-radius:12px;
-  border:1px solid #e2e8f0;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus{
-  outline:none;
-  border-color:#4f46e5;
-}
-
-.contact-form button{
-  background:#4f46e5;
-  color:white;
-  padding:14px;
-  border:none;
-  border-radius:12px;
-  font-weight:600;
-  cursor:pointer;
-}
-
-.contact-form button:hover{
-  background:#4338ca;
-}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  .hero{
-    flex-direction:column;
-    text-align:center;
-    gap:40px;
-  }
-
-  .contact-wrapper{
-    flex-direction:column;
-  }
-
-  .divider{
-    height:1px;
-    width:100%;
-  }
-}
-
-</style>
+  <link rel="stylesheet" href="style.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <nav>
   <h2>Amit</h2>
   <ul>
-    <li><a href="#">Home</a></li>
+    <li><a href="#home">Home</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#education">Education</a></li>
@@ -240,14 +23,17 @@ section h2{
 </nav>
 
 <!-- HERO -->
-<div class="hero">
+<section id="home" class="hero">
   <div class="hero-text">
     <h1>Hello, I'm <span>Amit Pradhan</span></h1>
     <p>Blockchain Developer | B.Tech Student specializing in Web3 and Smart Contract Development.</p>
-    <button class="hero-btn">Let's Connect</button>
+    <a href="#contact" class="btn">Let's Connect</a>
   </div>
-  <div class="hero-img">AP</div>
-</div>
+
+  <div class="hero-img">
+    AP
+  </div>
+</section>
 
 <!-- SKILLS -->
 <section id="skills">
@@ -255,60 +41,56 @@ section h2{
   <div class="cards">
     <div class="card">
       <h3>Smart Contract Development</h3>
-      <p>Designing secure Solidity contracts and deploying on Ethereum.</p>
+      <p>Building secure Solidity smart contracts deployed on Ethereum.</p>
     </div>
+
     <div class="card">
       <h3>DApp Development</h3>
-      <p>Building decentralized applications using Web3.js, Ethers.js and React.</p>
+      <p>Developing decentralized applications using Web3.js, Ethers.js & React.</p>
     </div>
+
     <div class="card">
       <h3>MetaMask Integration</h3>
-      <p>Implementing wallet authentication and blockchain transactions.</p>
+      <p>Wallet authentication and blockchain transaction handling.</p>
     </div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience">
+<section id="experience" class="dark-section">
   <h2>Experience</h2>
-  <div class="card">
-    <h3>Blockchain Developer (Self Projects)</h3>
-    <p>Developed decentralized applications and smart contracts for learning and practical implementation of Web3 technologies.</p>
+  <div class="cards">
+    <div class="card">
+      <h3>Blockchain Developer (Self Projects)</h3>
+      <p>Created smart contracts and decentralized applications to implement real-world blockchain use cases.</p>
+    </div>
   </div>
 </section>
 
 <!-- EDUCATION -->
 <section id="education">
   <h2>Education</h2>
-
   <div class="cards">
-
-    <!-- B.Tech -->
     <div class="card">
       <h3>Bachelor of Technology (B.Tech)</h3>
       <p><strong>Centurion University of Technology and Management</strong></p>
       <p>Bhubaneswar Campus</p>
-      <p>Specialization in Blockchain Technology and Web3 Development.</p>
     </div>
 
-    <!-- 12th -->
     <div class="card">
       <h3>Senior Secondary Education (12th - CBSE)</h3>
       <p><strong>St. Xaviers High School</strong></p>
-      <p>Completed higher secondary education with strong academic foundation.</p>
     </div>
 
-    <!-- 10th -->
     <div class="card">
       <h3>Secondary Education (10th - CBSE)</h3>
       <p><strong>St. Xaviers High School</strong></p>
-      <p>Completed schooling with academic excellence and technical interests.</p>
     </div>
-
   </div>
 </section>
+
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="dark-section">
   <h2>Contact Me</h2>
 
   <div class="contact-wrapper">
