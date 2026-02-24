@@ -34,6 +34,7 @@ body {
 /* SECTIONS */
 .about,
 .skills,
+.education,
 .contact {
     max-width: 1000px;
     margin: 60px auto;
@@ -71,6 +72,15 @@ h2 {
 
 .skill-card:hover {
     transform: translateY(-8px);
+}
+
+/* EDUCATION */
+.edu-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
 /* CONTACT */
