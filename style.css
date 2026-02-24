@@ -1,90 +1,85 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #f4f6f9;
-    color: #1f2937;
-    line-height: 1.6;
+    background: #0f172a;
+    color: #e2e8f0;
 }
 
 .hero {
-    background: linear-gradient(to right, #1e3a8a, #2563eb);
-    color: white;
     text-align: center;
     padding: 100px 20px;
-    animation: fadeIn 1.5s ease-in-out;
+    background: linear-gradient(to right, #1e293b, #0f172a);
 }
 
 .hero h1 {
     font-size: 48px;
     margin-bottom: 10px;
+    color: #38bdf8;
 }
 
-.hero-buttons a {
+.buttons a {
     margin: 10px;
     padding: 12px 24px;
-    background: white;
-    color: #2563eb;
+    background: #38bdf8;
+    color: #0f172a;
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.hero-buttons a:hover {
-    background: #e0e7ff;
-    transform: translateY(-3px);
+.buttons a:hover {
+    background: #0ea5e9;
 }
 
 section {
-    padding: 80px 10%;
+    padding: 70px 10%;
 }
 
-.case-grid, .metrics-grid, .skills-grid {
+h2 {
+    color: #38bdf8;
+    margin-bottom: 30px;
+}
+
+.project-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card ul {
+    padding-left: 20px;
+}
+
+.skill-grid {
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 15px;
 }
 
-.card, .metric, .skill {
-    background: white;
-    padding: 30px;
-    flex: 1;
-    min-width: 250px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
+.skill-grid span {
+    background: #1e293b;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
-.card:hover, .metric:hover, .skill:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-}
-
-.metric h3 {
-    font-size: 40px;
-    color: #2563eb;
-}
-
-.skills {
-    background: #ffffff;
-}
-
-.contact {
-    text-align: center;
-    background: #e5e7eb;
+.edu-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #1f2937;
-    color: white;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    background: #1e293b;
 }
 
 @media(max-width: 768px) {
