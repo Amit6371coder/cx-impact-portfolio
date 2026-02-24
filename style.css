@@ -1,89 +1,59 @@
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: #e2e8f0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Blockchain Developer</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(to right, #1e293b, #0f172a);
-}
+<body>
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-    color: #38bdf8;
-}
+<header class="hero">
+    <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
+    <h1>Your Name</h1>
+    <p>B.Tech Student | Blockchain Developer</p>
+    <div class="buttons">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="resume.pdf" download>Download Resume</a>
+    </div>
+</header>
 
-.buttons a {
-    margin: 10px;
-    padding: 12px 24px;
-    background: #38bdf8;
-    color: #0f172a;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: 0.3s;
-}
+<section class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a B.Tech student specializing in Blockchain Technology.
+        I build smart contracts, decentralized applications, and explore Web3 ecosystems.
+    </p>
+</section>
 
-.buttons a:hover {
-    background: #0ea5e9;
-}
+<section class="contact-info">
+    <h2>Contact Information</h2>
+    <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+    <p><strong>Email:</strong> your@email.com</p>
+</section>
 
-section {
-    padding: 70px 10%;
-}
+<section class="contact-form">
+    <h2>Send Me a Message</h2>
 
-h2 {
-    color: #38bdf8;
-    margin-bottom: 30px;
-}
+    <!-- Replace your@email.com with your real email -->
+    <form action="https://formsubmit.co/your@email.com" method="POST">
 
-.project-card {
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    transition: transform 0.3s;
-}
+        <input type="text" name="name" placeholder="Your Name" required>
 
-.project-card:hover {
-    transform: translateY(-5px);
-}
+        <input type="email" name="email" placeholder="Your Email" required>
 
-.project-card ul {
-    padding-left: 20px;
-}
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
-.skill-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
+        <button type="submit">Send Message</button>
 
-.skill-grid span {
-    background: #1e293b;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 14px;
-}
+    </form>
+</section>
 
-.edu-card {
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 10px;
-}
+<footer>
+    <p>© 2026 Your Name | Blockchain Portfolio</p>
+</footer>
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1e293b;
-}
-
-@media(max-width: 768px) {
-    .hero h1 {
-        font-size: 32px;
-    }
-}
+</body>
+</html>
