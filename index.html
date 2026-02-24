@@ -3,84 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name | Personal Profile</title>
+<title>Your Name | Blockchain Developer</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="container">
-
-    <div class="profile">
-        <img src="profile.jpg" alt="Profile Photo">
+<header class="hero">
+    <div class="hero-left">
         <h1>Your Name</h1>
-        <p class="tagline">B.Tech Student | Blockchain Enthusiast</p>
+        <h2>Blockchain Developer</h2>
+        <p>
+            B.Tech student specializing in Blockchain Technology.
+            I build secure smart contracts and decentralized applications.
+            Passionate about Web3 innovation and decentralized ecosystems.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#contact">Contact Me</a>
+            <a href="resume.pdf" download>Download Resume</a>
+        </div>
     </div>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-            I am a B.Tech student passionate about Blockchain Technology and 
-            decentralized systems. I continuously explore Web3 development 
-            and work on building smart contract-based applications.
-        </p>
-    </section>
+    <div class="hero-right">
+        <img src="profile.jpg" alt="Profile Photo">
+    </div>
+</header>
 
-    <section class="skills">
-        <h2>Blockchain Skills</h2>
+<section class="section">
+    <h2>About Me</h2>
+    <p class="center-text">
+        I am currently pursuing B.Tech and focusing on Blockchain development.
+        My interest lies in building decentralized systems that are transparent,
+        secure, and scalable. I have hands-on experience working with Solidity,
+        Ethereum test networks, and Web3 integrations. I continuously explore
+        emerging blockchain technologies to strengthen my practical knowledge.
+    </p>
+</section>
 
-        <div class="skill-box">
+<section class="section">
+    <h2>Blockchain Skills</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Solidity Icon">
             <h3>Smart Contract Development</h3>
             <p>
-                Developed secure smart contracts using Solidity. 
-                Implemented on-chain logic and deployed contracts 
-                using Hardhat on Ethereum test networks.
+                Developed Solidity-based smart contracts and deployed
+                them using Hardhat on Ethereum test networks.
             </p>
         </div>
 
-        <div class="skill-box">
-            <h3>Decentralized Application (DApp) Development</h3>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="DApp Icon">
+            <h3>DApp Development</h3>
             <p>
-                Built decentralized applications by connecting 
-                frontend interfaces with blockchain smart contracts 
-                to enable secure and transparent transactions.
+                Built decentralized applications by integrating
+                frontend interfaces with blockchain smart contracts.
             </p>
         </div>
 
-        <div class="skill-box">
-            <h3>MetaMask Integration</h3>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968853.png" alt="MetaMask Icon">
+            <h3>MetaMask & Web3 Integration</h3>
             <p>
-                Integrated MetaMask wallet for user authentication, 
-                transaction signing, and interaction with smart contracts 
-                on Ethereum and Polygon networks.
+                Implemented wallet authentication, transaction signing,
+                and Web3-based interaction using MetaMask.
             </p>
         </div>
 
-    </section>
+    </div>
+</section>
 
-    <section class="contact-info">
-        <h2>Contact Details</h2>
-        <p><strong>Email:</strong> your@email.com</p>
-        <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
-    </section>
+<section class="section contact" id="contact">
+    <h2>Contact</h2>
 
-    <section class="contact-form">
-        <h2>Send Me a Message</h2>
+    <div class="contact-info">
+        <p>Email: your@email.com</p>
+        <p>Phone: +91 XXXXX XXXXX</p>
+    </div>
 
-        <!-- Replace your@email.com with your real email -->
-        <form action="https://formsubmit.co/your@email.com" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-
-    </section>
-
-</div>
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
 <footer>
-    <p>© 2026 Your Name | Blockchain Profile</p>
+    © 2026 Your Name | Blockchain Developer
 </footer>
 
 </body>
