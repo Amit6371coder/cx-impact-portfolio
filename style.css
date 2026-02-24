@@ -10,16 +10,18 @@ body {
   color: #f1f5f9;
 }
 
+/* NAVBAR */
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 10%;
   background: #111827;
   position: sticky;
   top: 0;
 }
 
-nav h2 {
+.logo {
   color: #14b8a6;
 }
 
@@ -32,12 +34,14 @@ nav ul {
 nav ul li a {
   color: #cbd5e1;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 nav ul li a:hover {
   color: #14b8a6;
 }
 
+/* HERO */
 .hero {
   display: flex;
   align-items: center;
@@ -68,8 +72,13 @@ nav ul li a:hover {
   padding: 12px 25px;
   color: #0f172a;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 8px;
   font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5a4;
 }
 
 .hero-img {
@@ -86,6 +95,7 @@ nav ul li a:hover {
   object-fit: cover;
 }
 
+/* SECTIONS */
 section {
   padding: 80px 10%;
 }
@@ -95,6 +105,11 @@ section h2 {
   color: #14b8a6;
 }
 
+.dark {
+  background: #111827;
+}
+
+/* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -112,13 +127,15 @@ section h2 {
   transform: translateY(-5px);
 }
 
-.dark {
-  background: #111827;
+/* CONTACT */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
 }
 
-.contact-container {
-  display: flex;
-  gap: 60px;
+.contact-info p {
+  margin-bottom: 20px;
 }
 
 .contact-info a {
@@ -128,13 +145,17 @@ section h2 {
 
 .linkedin-btn {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 12px 20px;
   background: #0a66c2;
   color: white;
-  border-radius: 10px;
-  text-decoration: none;
+  border-radius: 8px;
   font-weight: 600;
+  transition: 0.3s;
+}
+
+.linkedin-btn:hover {
+  background: #084a91;
 }
 
 .contact-form form {
@@ -153,15 +174,20 @@ section h2 {
 }
 
 .contact-form button {
+  padding: 12px;
   background: #14b8a6;
   border: none;
-  padding: 12px;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
 }
 
-@media(max-width: 900px) {
+.contact-form button:hover {
+  background: #0ea5a4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
   .hero,
   .contact-container {
     flex-direction: column;
