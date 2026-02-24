@@ -9,53 +9,67 @@
 
 <body>
 
-<header class="hero">
-    <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
-    <h1>Your Name</h1>
-    <p>B.Tech Student | Blockchain Developer</p>
+<nav class="navbar">
+    <div class="logo">YourName</div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 
-    <div class="buttons">
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-        <a href="resume.pdf" download>Download Resume</a>
+<header class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Blockchain Developer</h1>
+            <p>B.Tech Student building Smart Contracts & Web3 Applications</p>
+
+            <div class="buttons">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="profile.jpg" alt="Profile">
+        </div>
     </div>
 </header>
 
-<section class="about">
+<section id="about" class="section">
     <h2>About Me</h2>
     <p>
         I am a B.Tech student specializing in Blockchain Technology.
-        I build smart contracts, decentralized applications (DApps),
-        and explore Web3 ecosystems like Ethereum and Polygon.
+        I build secure smart contracts using Solidity and develop decentralized applications (DApps).
+        Passionate about Ethereum, Web3, and decentralized systems.
     </p>
 </section>
 
-<section class="projects">
+<section id="projects" class="section">
     <h2>Blockchain Projects</h2>
 
-    <div class="project-card">
-        <h3>Decentralized Crowdfunding DApp</h3>
-        <ul>
-            <li>Built using Solidity & Hardhat</li>
-            <li>Integrated MetaMask wallet</li>
-            <li>Deployed on Ethereum testnet</li>
-        </ul>
-    </div>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Crowdfunding DApp</h3>
+            <p>Smart contract based crowdfunding platform built with Solidity & Hardhat.</p>
+        </div>
 
-    <div class="project-card">
-        <h3>NFT Minting Platform</h3>
-        <ul>
-            <li>Developed ERC-721 Smart Contract</li>
-            <li>Used IPFS for decentralized storage</li>
-            <li>Built React frontend interface</li>
-        </ul>
-    </div>
+        <div class="project-card">
+            <h3>NFT Minting Platform</h3>
+            <p>ERC-721 contract with IPFS integration and React frontend.</p>
+        </div>
 
+        <div class="project-card">
+            <h3>Token Voting System</h3>
+            <p>ERC-20 token based decentralized governance application.</p>
+        </div>
+    </div>
 </section>
 
-<section class="skills">
+<section id="skills" class="section">
     <h2>Technical Skills</h2>
-    <div class="skill-grid">
+    <div class="skills">
         <span>Solidity</span>
         <span>Hardhat</span>
         <span>Ethereum</span>
@@ -67,10 +81,10 @@
     </div>
 </section>
 
-<section class="contact">
+<section id="contact" class="section contact">
     <h2>Contact</h2>
-    <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
-    <p><strong>Email:</strong> your@email.com</p>
+    <p>Email: your@email.com</p>
+    <p>Phone: +91 XXXXX XXXXX</p>
 
     <form action="https://formsubmit.co/your@email.com" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
@@ -81,7 +95,7 @@
 </section>
 
 <footer>
-    <p>© 2026 Your Name | Blockchain Portfolio</p>
+    <p>© 2026 Your Name | Blockchain Developer</p>
 </footer>
 
 </body>
