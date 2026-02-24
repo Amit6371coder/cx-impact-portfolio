@@ -1,199 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Amit Pradhan | Blockchain Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amit Pradhan | Blockchain Developer</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+body{
+  font-family:'Inter',sans-serif;
+  background:#f8fafc;
+  color:#0f172a;
+  scroll-behavior:smooth;
+}
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f8fafc;
-      color: #0f172a;
-      line-height: 1.6;
-    }
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 10%;
+  background:white;
+  border-bottom:1px solid #e2e8f0;
+  position:sticky;
+  top:0;
+}
 
-    section {
-      padding: 100px 10%;
-      border-top: 1px solid #e2e8f0;
-    }
+nav h2{
+  color:#4f46e5;
+}
 
-    h1, h2, h3 {
-      font-weight: 700;
-      letter-spacing: -0.5px;
-    }
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:30px;
+}
 
-    h2 {
-      font-size: 32px;
-      margin-bottom: 40px;
-      color: #4f46e5;
-    }
+nav ul li a{
+  text-decoration:none;
+  color:#475569;
+  font-weight:500;
+}
 
-    p {
-      color: #475569;
-      font-size: 16px;
-    }
+nav ul li a:hover{
+  color:#4f46e5;
+}
 
-    /* Hero Section */
-    .hero {
-      padding: 120px 10%;
-      display: flex;
-      align-items: center;
-      gap: 60px;
-      background: #f8fafc;
-      position: relative;
-    }
+/* HERO */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:100px 10%;
+}
 
-    .profile-circle {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(79,70,229,0.1) 0%, rgba(79,70,229,0.03) 70%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 48px;
-      font-weight: 600;
-      color: #4f46e5;
-    }
+.hero-text{
+  max-width:550px;
+}
 
-    .hero-text h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
+.hero-text h1{
+  font-size:48px;
+  margin-bottom:15px;
+}
 
-    .hero-text span {
-      color: #4f46e5;
-      font-weight: 600;
-    }
+.hero-text span{
+  color:#4f46e5;
+  font-weight:600;
+}
 
-    /* Cards */
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
+.hero-text p{
+  margin-bottom:30px;
+  color:#475569;
+}
 
-    .card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      padding: 30px;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
-      transition: all 0.3s ease;
-    }
+.hero-btn{
+  padding:14px 28px;
+  background:#4f46e5;
+  color:white;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
 
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
-    }
+.hero-btn:hover{
+  background:#4338ca;
+}
 
-    .card h3 {
-      margin-bottom: 10px;
-      font-size: 20px;
-      color: #0f172a;
-    }
+.hero-img{
+  width:300px;
+  height:300px;
+  border-radius:30px;
+  background:linear-gradient(135deg,#e0e7ff,#c7d2fe);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:80px;
+  color:#4f46e5;
+  font-weight:700;
+}
 
-    /* Contact */
-    .contact a {
-      color: #4f46e5;
-      text-decoration: none;
-      font-weight: 600;
-    }
+/* SECTION */
+section{
+  padding:100px 10%;
+  border-top:1px solid #e2e8f0;
+}
 
-    .contact a:hover {
-      color: #4338ca;
-    }
+section h2{
+  font-size:32px;
+  margin-bottom:40px;
+  color:#4f46e5;
+}
 
-    /* Responsive */
-    @media(max-width: 768px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
 
-  </style>
+.card{
+  background:white;
+  padding:30px;
+  border-radius:16px;
+  border:1px solid #e2e8f0;
+  box-shadow:0 10px 30px rgba(15,23,42,0.05);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 15px 40px rgba(15,23,42,0.08);
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+/* CONTACT */
+.contact-wrapper{
+  display:flex;
+  gap:60px;
+}
+
+.contact-info{
+  flex:1;
+}
+
+.contact-info p{
+  margin-bottom:20px;
+  color:#475569;
+}
+
+.contact-info a{
+  color:#4f46e5;
+  text-decoration:none;
+}
+
+.divider{
+  width:1px;
+  background:#e2e8f0;
+}
+
+.contact-form{
+  flex:1;
+}
+
+.contact-form form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:14px;
+  border-radius:12px;
+  border:1px solid #e2e8f0;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  outline:none;
+  border-color:#4f46e5;
+}
+
+.contact-form button{
+  background:#4f46e5;
+  color:white;
+  padding:14px;
+  border:none;
+  border-radius:12px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.contact-form button:hover{
+  background:#4338ca;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    gap:40px;
+  }
+
+  .contact-wrapper{
+    flex-direction:column;
+  }
+
+  .divider{
+    height:1px;
+    width:100%;
+  }
+}
+
+</style>
 </head>
 <body>
 
-  <!-- HERO -->
-  <section class="hero" style="border-top: none;">
-    <div class="profile-circle">
-      AP
-    </div>
-    <div class="hero-text">
-      <h1>Amit Pradhan</h1>
-      <p><span>Blockchain Developer</span> | B.Tech Student</p>
-    </div>
-  </section>
+<nav>
+  <h2>Amit</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- ABOUT -->
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I build secure smart contracts and scalable Web3 applications focused on transparency and decentralization.
-      Currently pursuing B.Tech with specialization in Blockchain Technology and Web3 development.
-    </p>
-  </section>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <h1>Hello, I'm <span>Amit Pradhan</span></h1>
+    <p>Blockchain Developer | B.Tech Student specializing in Web3 and Smart Contract Development.</p>
+    <button class="hero-btn">Let's Connect</button>
+  </div>
+  <div class="hero-img">AP</div>
+</div>
 
-  <!-- SKILLS -->
-  <section>
-    <h2>Skills</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>Smart Contract Development</h3>
-        <p>Designing and deploying secure Solidity smart contracts on Ethereum.</p>
-      </div>
-
-      <div class="card">
-        <h3>DApp Development</h3>
-        <p>Building decentralized applications using Web3.js, Ethers.js, and React.</p>
-      </div>
-
-      <div class="card">
-        <h3>MetaMask Integration</h3>
-        <p>Implementing wallet authentication and blockchain transactions.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section>
-    <h2>Education</h2>
-
-    <div class="card" style="margin-bottom: 30px;">
-      <h3>Bachelor of Technology (B.Tech)</h3>
-      <p>Centurion University of Technology and Management</p>
-      <p>Focus on Blockchain Technology and Web3 Development.</p>
-    </div>
-
+<!-- SKILLS -->
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="cards">
     <div class="card">
-      <h3>Senior Secondary Education (CBSE)</h3>
-      <p>St. Xaviers High School</p>
+      <h3>Smart Contract Development</h3>
+      <p>Designing secure Solidity contracts and deploying on Ethereum.</p>
+    </div>
+    <div class="card">
+      <h3>DApp Development</h3>
+      <p>Building decentralized applications using Web3.js, Ethers.js and React.</p>
+    </div>
+    <div class="card">
+      <h3>MetaMask Integration</h3>
+      <p>Implementing wallet authentication and blockchain transactions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>Blockchain Developer (Self Projects)</h3>
+    <p>Developed decentralized applications and smart contracts for learning and practical implementation of Web3 technologies.</p>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="cards">
+
+    <!-- B.Tech -->
+    <div class="card">
+      <h3>Bachelor of Technology (B.Tech)</h3>
+      <p><strong>Centurion University of Technology and Management</strong></p>
+      <p>Bhubaneswar Campus</p>
+      <p>Specialization in Blockchain Technology and Web3 Development.</p>
+    </div>
+
+    <!-- 12th -->
+    <div class="card">
+      <h3>Senior Secondary Education (12th - CBSE)</h3>
+      <p><strong>St. Xaviers High School</strong></p>
       <p>Completed higher secondary education with strong academic foundation.</p>
     </div>
 
-  </section>
+    <!-- 10th -->
+    <div class="card">
+      <h3>Secondary Education (10th - CBSE)</h3>
+      <p><strong>St. Xaviers High School</strong></p>
+      <p>Completed schooling with academic excellence and technical interests.</p>
+    </div>
 
-  <!-- CONTACT -->
-  <section class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:amitpradhan9246@gmail.com">amitpradhan9246@gmail.com</a></p>
-  </section>
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <div class="contact-wrapper">
+
+    <div class="contact-info">
+      <p><strong>Email:</strong><br>
+        <a href="mailto:amitpradhan9246@gmail.com">amitpradhan9246@gmail.com</a>
+      </p>
+
+      <p><strong>Phone:</strong><br>
+        <a href="tel:+919348672393">+91 9348672393</a>
+      </p>
+
+      <p><strong>Location:</strong><br>
+        Bhubaneswar, Jatani
+      </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="contact-form">
+      <form action="https://formsubmit.co/amitpradhan9246@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Portfolio Message">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
 
 </body>
 </html>
