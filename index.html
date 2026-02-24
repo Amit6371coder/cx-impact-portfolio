@@ -3,99 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name | Blockchain Developer</title>
+<title>Your Name | Personal Profile</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav class="navbar">
-    <div class="logo">YourName</div>
-    <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+<div class="container">
+
+    <div class="profile">
+        <img src="profile.jpg" alt="Profile Photo">
+        <h1>Your Name</h1>
+        <p class="tagline">B.Tech Student | Blockchain Enthusiast</p>
     </div>
-</nav>
 
-<header class="hero">
-    <div class="hero-content">
-        <div class="hero-text">
-            <h1>Blockchain Developer</h1>
-            <p>B.Tech Student building Smart Contracts & Web3 Applications</p>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a B.Tech student passionate about blockchain technology and
+            continuous learning. I enjoy solving problems, exploring decentralized
+            systems, and improving my technical and analytical skills.
+        </p>
+    </section>
 
-            <div class="buttons">
-                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            </div>
-        </div>
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Problem Solving</li>
+            <li>Critical Thinking</li>
+            <li>Team Collaboration</li>
+            <li>Communication Skills</li>
+            <li>Leadership</li>
+        </ul>
+    </section>
 
-        <div class="hero-image">
-            <img src="profile.jpg" alt="Profile">
-        </div>
-    </div>
-</header>
+    <section class="contact-info">
+        <h2>Contact Details</h2>
+        <p><strong>Email:</strong> your@email.com</p>
+        <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+    </section>
 
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-        I am a B.Tech student specializing in Blockchain Technology.
-        I build secure smart contracts using Solidity and develop decentralized applications (DApps).
-        Passionate about Ethereum, Web3, and decentralized systems.
-    </p>
-</section>
+    <section class="contact-form">
+        <h2>Send Me a Message</h2>
 
-<section id="projects" class="section">
-    <h2>Blockchain Projects</h2>
+        <!-- Replace with your real email -->
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
 
-    <div class="project-grid">
-        <div class="project-card">
-            <h3>Crowdfunding DApp</h3>
-            <p>Smart contract based crowdfunding platform built with Solidity & Hardhat.</p>
-        </div>
+    </section>
 
-        <div class="project-card">
-            <h3>NFT Minting Platform</h3>
-            <p>ERC-721 contract with IPFS integration and React frontend.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Token Voting System</h3>
-            <p>ERC-20 token based decentralized governance application.</p>
-        </div>
-    </div>
-</section>
-
-<section id="skills" class="section">
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <span>Solidity</span>
-        <span>Hardhat</span>
-        <span>Ethereum</span>
-        <span>Polygon</span>
-        <span>React</span>
-        <span>Node.js</span>
-        <span>Web3.js</span>
-        <span>Git & GitHub</span>
-    </div>
-</section>
-
-<section id="contact" class="section contact">
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-    <p>Phone: +91 XXXXX XXXXX</p>
-
-    <form action="https://formsubmit.co/your@email.com" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+</div>
 
 <footer>
-    <p>© 2026 Your Name | Blockchain Developer</p>
+    <p>© 2026 Your Name | Personal Profile</p>
 </footer>
 
 </body>
