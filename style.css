@@ -3,35 +3,92 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #f4f6f9;
     color: #1f2937;
+    line-height: 1.6;
 }
 
 .hero {
     background: linear-gradient(to right, #1e3a8a, #2563eb);
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: 48px;
     margin-bottom: 10px;
 }
 
 .hero-buttons a {
     margin: 10px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background: white;
     color: #2563eb;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-buttons a:hover {
+    background: #e0e7ff;
+    transform: translateY(-3px);
 }
 
 section {
-    padding: 60px 10%;
+    padding: 80px 10%;
+}
+
+.case-grid, .metrics-grid, .skills-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card, .metric, .skill {
+    background: white;
+    padding: 30px;
+    flex: 1;
+    min-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover, .metric:hover, .skill:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.metric h3 {
+    font-size: 40px;
+    color: #2563eb;
+}
+
+.skills {
+    background: #ffffff;
 }
 
 .contact {
-    background: #e5e7eb;
     text-align: center;
+    background: #e5e7eb;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f2937;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
 }
